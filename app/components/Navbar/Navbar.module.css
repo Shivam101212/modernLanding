@@ -1,0 +1,151 @@
+/* Tokens */
+:root {
+  --navy:   #001D39;
+  --blue:   #49769F;
+  --teal:   #4E8EA2;
+  --sky:    #7BBDE8;
+  --pale:   #BDD8E9;
+  --fn:     var(--font-jakarta), 'Segoe UI', sans-serif;
+}
+
+/* Sticky wrapper */
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  transition: padding 0.3s ease;
+}
+
+/* Pill */
+.navbar {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e4edf5;
+  border-radius: 14px;
+  padding: 12px 24px;
+  font-family: var(--fn);
+  transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 10px 24px;
+  box-shadow: 0 4px 20px rgba(0, 29, 57, 0.08);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.logoMark {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+  background: #f0f7fc;
+  border: 1px solid var(--pale);
+  border-radius: 9px; */
+  
+}
+.logoMark img{
+  height: 100%;
+  width: 100%;
+}
+
+.brand {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: -0.2px;
+  font-style: italic;
+  
+}
+
+/* Links */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a6070;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.link:hover {
+  color: var(--navy);
+  background: #f2f7fb;
+}
+
+.link.active {
+  color: var(--blue);
+  background: #eaf3fa;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loginBtn {
+  font-family: var(--fn);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--navy);
+  background: transparent;
+  border: 1px solid #cddcea;
+  border-radius: 9px;
+  padding: 7px 18px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.loginBtn:hover {
+  border-color: var(--blue);
+  background: #f2f7fb;
+}
+
+.registerBtn {
+  font-family: var(--fn);
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--blue);
+  border: none;
+  border-radius: 9px;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.registerBtn:hover {
+  background: var(--teal);
+  transform: translateY(-1px);
+}
+
+.registerBtn:active {
+  transform: translateY(0);
+}

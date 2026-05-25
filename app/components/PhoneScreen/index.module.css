@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.phone{
+    min-width: 200px;
+    width: 100%;
+    max-width: 1080px;
+    aspect-ratio: 19.5/9;
+    background-color: red;
+}
