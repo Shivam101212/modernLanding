@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5em 1.5em;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+
+.iyland{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 1.75em;
+    background-color: black;
+    border-radius: 1em;
+    
+}
+.right{
+    display: flex;
+    gap: 0.5em;
+}

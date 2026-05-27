@@ -1,12 +1,12 @@
+import Navbar from './Navbar'
 import styles from './index.module.css'
- import React from 'react'
+import Footer from './Footer'
  
  function PhoneScreen() {
    return (
      <div className={styles.main}>
-      <div className={styles.phone}>
-        
-      </div>
+      <Navbar/>
+      <Footer />
      </div>
    )
  }
